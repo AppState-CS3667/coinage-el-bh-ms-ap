@@ -1,3 +1,5 @@
+package Smelting;
+
 public class CopperNickel3 implements SmeltingBehavior
 {
     public String getSmeltingSpecs()

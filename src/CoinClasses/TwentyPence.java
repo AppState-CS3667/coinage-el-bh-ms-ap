@@ -1,7 +1,10 @@
 package CoinClasses;
+
 import MainCoin.*;
+import Smelting.CopperNickel3;
+
 public class TwentyPence extends Coin {
     public TwentyPence() {
-        super(CountryCodes.GBP, CoinNames.TwentyPence, 0.20, "84% Cu, 16% Ni");
+        super(CountryCodes.GBP, CoinNames.TwentyPence, 0.20, new CopperNickel3());
     }
 }

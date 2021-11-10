@@ -1,3 +1,4 @@
+package Smelting;
 /*  SmeltingBehavior interface
  *  
  *  Stradegy Pattern
