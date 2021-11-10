@@ -1,5 +1,3 @@
-
-
 public class TwoRings implements SmeltingBehavior
 {
     public String getSmeltingSpecs()

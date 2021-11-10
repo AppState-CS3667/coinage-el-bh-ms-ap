@@ -9,7 +9,6 @@
  *  Date: 11/8/2021
  */
 
-
 public interface SmeltingBehavior 
 {
     /**

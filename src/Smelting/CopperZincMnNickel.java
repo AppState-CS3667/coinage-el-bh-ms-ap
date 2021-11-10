@@ -1,5 +1,3 @@
-
-
 public class CopperZincMnNickel implements SmeltingBehavior
 {
     public String getSmeltingSpecs()

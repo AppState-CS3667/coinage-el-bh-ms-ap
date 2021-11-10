@@ -1,9 +1,6 @@
-/*  Unknown Specification
- */
-
 public class Unknown implements SmeltingBehavior
 {
-    public String getSmeltingSpec()
+    public String getSmeltingSpecs()
     {
         return "Unknown";
     }

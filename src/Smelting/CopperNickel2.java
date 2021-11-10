@@ -1,5 +1,3 @@
-
-
 public class CopperNickel2 implements SmeltingBehavior
 {
     public String getSmeltingSpecs()

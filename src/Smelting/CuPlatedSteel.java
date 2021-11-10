@@ -1,5 +1,3 @@
-
-
 public class CuPlatedSteel implements SmeltingBehavior
 {
     public String getSmeltingSpecs()
