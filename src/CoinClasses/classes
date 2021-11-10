@@ -1,15 +1,24 @@
+
+
+//USD
 Dollar.java						CopperZincMnNickel
 HalfDollar.java					CopperNickel1
 QuarterUSD.java					CopperNickel1
 DimeUSD.java					CopperNickel1
 NickelUSD.java					CopperNickel2
 Penny.java						CopperZinc
+
+
+//CAD
 Toonie.java						UnknownSpecs
 Loonie.java						UnknownSpecs
 FiftyCent.java					UnknownSpecs
 QuarterCAD.java					UnknownSpecs
 DimeCAD.java					UnknownSpecs
 NickelCAD.java					UnknownSpecs
+
+
+//EUR
 TwoEuro.java					UnknownSpecs
 OneEuro.java					UnknownSpecs
 FiftyEuroCent.java				UnknownSpecs
@@ -18,6 +27,9 @@ TenEuroCent.java				UnknownSpecs
 FiveEuroCent.java				UnknownSpecs
 TwoEuroCent.java				UnknownSpecs
 EuroCent.java					UnknownSpecs
+
+
+//GBP
 FivePound.java					CopperNickel2
 TwoPound.java					TwoRings
 Pound.java						CopperZincNickel

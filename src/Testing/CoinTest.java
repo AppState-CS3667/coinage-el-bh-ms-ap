@@ -86,4 +86,57 @@ public class CoinTest {
 	/*
 		CAD Coins
 	*/
+	@Test
+	public void testToonie() {
+	    coin = new Toonie();
+        Assert.assertTrue(coin.getValue() == 2.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.Toonie);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testLoonie() {
+	    coin = new Loonie();
+        Assert.assertTrue(coin.getValue() == 1.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.Loonie);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testFiftyCent() {
+	    coin = new FiftyCent();
+        Assert.assertTrue(coin.getValue() == 0.50);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.FiftyCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testQuarterCAD() {
+	    coin = new QuarterCAD();
+        Assert.assertTrue(coin.getValue() == 0.25);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.CadQuarter);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testDimeCAD() {
+	    coin = new DimeCAD();
+        Assert.assertTrue(coin.getValue() == 0.10);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.CadDime);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testNickelCAD() {
+	    coin = new NickelCAD();
+        Assert.assertTrue(coin.getValue() == 0.05);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.CAD);
+        Assert.assertEquals(coin.getName(), CoinNames.CadNickel);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
 }
