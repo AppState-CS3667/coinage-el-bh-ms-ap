@@ -1,3 +1,4 @@
+package MainCoin;
 /**
  * Coin.java Abstract Super Class for Coins
  * Uses Enums for name and countryCode for compile time error catching.
@@ -53,6 +54,20 @@ public abstract class Coin {
      */
     public String getSmeltingSpec() {
         return smeltingSpec;
+    }
+
+    /**
+     * Calls smelt on the smelt object
+     */
+    public void smelt() {
+        //todo
+    }
+
+    /**
+     * Polish Method
+     */
+    public void polish() {
+
     }
 
 }

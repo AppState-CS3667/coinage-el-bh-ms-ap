@@ -1,16 +1,17 @@
+package MainCoin;
 
 /**
- * Mint implementation for EUR.
+ * Mint implementation for USD.
  * @author Bryan Hill
  *
  */
-public class EURMint extends Mint {
+public class USDMint extends Mint {
     
-    private static EURMint mintInstance;
+    private static USDMint mintInstance;
 
     /**
      * Method to make and return the desired coin.
-     * @param countryCode: The country of origin for Coin (EUR).
+     * @param countryCode: The country of origin for Coin (USD).
      * @param denomination: The numeric value of the Coin.
      * @return
      */
@@ -19,9 +20,9 @@ public class EURMint extends Mint {
         return null;
     }
     
-    public static EURMint getInstance() {
+    public static USDMint getInstance() {
         if (mintInstance == null) {
-            mintInstance = new EURMint();
+            mintInstance = new USDMint();
         }
         return mintInstance;
     }

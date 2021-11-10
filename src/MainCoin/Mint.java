@@ -1,3 +1,4 @@
+package MainCoin;
 /**
  * Mint abstraction for factory pattern implementation.
  * @author Bryan Hill

@@ -1,3 +1,4 @@
+package MainCoin;
 /**
  * Demo Class for creating coin on user input.
  * @author Bryan Hill

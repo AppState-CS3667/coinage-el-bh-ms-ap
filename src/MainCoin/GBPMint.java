@@ -1,16 +1,17 @@
+package MainCoin;
 
 /**
- * Mint implementation for USD.
+ * Mint implementation for GBP.
  * @author Bryan Hill
  *
  */
-public class USDMint extends Mint {
+public class GBPMint extends Mint {
     
-    private static USDMint mintInstance;
+    private static GBPMint mintInstance;
 
     /**
      * Method to make and return the desired coin.
-     * @param countryCode: The country of origin for Coin (USD).
+     * @param countryCode: The country of origin for Coin (GBP).
      * @param denomination: The numeric value of the Coin.
      * @return
      */
@@ -19,9 +20,9 @@ public class USDMint extends Mint {
         return null;
     }
     
-    public static USDMint getInstance() {
+    public static GBPMint getInstance() {
         if (mintInstance == null) {
-            mintInstance = new USDMint();
+            mintInstance = new GBPMint();
         }
         return mintInstance;
     }

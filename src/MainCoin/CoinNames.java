@@ -1,3 +1,4 @@
+package MainCoin;
 /**
  * All Possible Coin Names
  * Using an enum for compile time error catching
