@@ -1,4 +1,6 @@
 package MainCoin;
+
+import Smelting.SmeltingBehavior;
 /**
  * Coin.java Abstract Super Class for Coins
  * Uses Enums for name and countryCode for compile time error catching.
@@ -10,14 +12,14 @@ public abstract class Coin {
     private CountryCodes countryCode;
     private double value;
     private CoinNames name;
-    private String smeltingSpec; //todo
+    private SmeltingBehavior smeltingSpec;
 
     /**
      * Constructor for Coin
      * @param countryCode
      * @param value
      */
-    public Coin(CountryCodes countryCode, CoinNames name, double value, String smeltingSpec) {
+    public Coin(CountryCodes countryCode, CoinNames name, double value, SmeltingBehavior smeltingSpec) {
         this.countryCode = countryCode;
         this.value = value;
         this.name = name;
@@ -53,7 +55,7 @@ public abstract class Coin {
      * @return smeltingSpec
      */
     public String getSmeltingSpec() {
-        return smeltingSpec;
+        return smeltingSpec.getSmeltingSpecs();
     }
 
     /**

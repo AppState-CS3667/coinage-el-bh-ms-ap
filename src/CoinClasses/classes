@@ -1,29 +1,29 @@
-Dollar.java
-HalfDollar.java
-QuarterUSD.java
-DimeUSD.java
-NickelUSD.java
-Penny.java
-Toonie.java
-Loonie.java
-FiftyCent.java
-QuarterCAD.java
-DimeCAD.java
-NickelCAD.java
-TwoEuro.java
-OneEuro.java
-FiftyEuroCent.java
-TwentyEuroCent.java
-TenEuroCent.java
-FiveEuroCent.java
-TwoEuroCent.java
-EuroCent.java
-FivePound.java
-TwoPound.java
-Pound.java
-FiftyPence.java
-TwentyPence.java
-TenPence.java
-FivePence.java
-TwoPence.java
-Pence.java
+Dollar.java						CopperZincMnNickel
+HalfDollar.java					CopperNickel1
+QuarterUSD.java					CopperNickel1
+DimeUSD.java					CopperNickel1
+NickelUSD.java					CopperNickel2
+Penny.java						CopperZinc
+Toonie.java						UnknownSpecs
+Loonie.java						UnknownSpecs
+FiftyCent.java					UnknownSpecs
+QuarterCAD.java					UnknownSpecs
+DimeCAD.java					UnknownSpecs
+NickelCAD.java					UnknownSpecs
+TwoEuro.java					UnknownSpecs
+OneEuro.java					UnknownSpecs
+FiftyEuroCent.java				UnknownSpecs
+TwentyEuroCent.java				UnknownSpecs
+TenEuroCent.java				UnknownSpecs
+FiveEuroCent.java				UnknownSpecs
+TwoEuroCent.java				UnknownSpecs
+EuroCent.java					UnknownSpecs
+FivePound.java					CopperNickel2
+TwoPound.java					TwoRings
+Pound.java						CopperZincNickel
+FiftyPence.java					CopperNickel2
+TwentyPence.java				CopperNickel3
+TenPence.java					CopperNickel2
+FivePence.java					CopperNickel2
+TwoPence.java					CuPlatedSteel
+Pence.java						CuPlatedSteel
