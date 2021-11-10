@@ -83,6 +83,7 @@ public class CoinTest {
     }
 	
 	
+	
 	/*
 		CAD Coins
 	*/
@@ -139,6 +140,8 @@ public class CoinTest {
         Assert.assertEquals(coin.getName(), CoinNames.CadNickel);
         Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
     }
+	
+	
 	
 	/*
 		EUR Coins
@@ -213,5 +216,91 @@ public class CoinTest {
         Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
         Assert.assertEquals(coin.getName(), CoinNames.EuroCent);
         Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	
+	
+	/*
+		EUR Coins
+	*/
+	@Test
+	public void testFivePound() {
+	    coin = new FivePound();
+        Assert.assertTrue(coin.getValue() == 5.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.FivePound);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperNickel2.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTwoPound() {
+	    coin = new TwoPound();
+        Assert.assertTrue(coin.getValue() == 2.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.TwoPound);
+        Assert.assertEquals(coin.getSmeltingSpec(), twoRings.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testPound() {
+	    coin = new Pound();
+        Assert.assertTrue(coin.getValue() == 1.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.Pound);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperZincNickel.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testFiftyPence() {
+	    coin = new FiftyPence();
+        Assert.assertTrue(coin.getValue() == 0.50);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.FiftyPence);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperNickel2.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTwentyPence() {
+	    coin = new TwentyPence();
+        Assert.assertTrue(coin.getValue() == 0.20);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.TwentyPence);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperNickel3.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTenPence() {
+	    coin = new TenPence();
+        Assert.assertTrue(coin.getValue() == 0.10);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.TenPence);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperNickel2.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testFivePence() {
+	    coin = new FivePence();
+        Assert.assertTrue(coin.getValue() == 0.05);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.FivePence);
+        Assert.assertEquals(coin.getSmeltingSpec(), copperNickel2.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTwoPence() {
+	    coin = new TwoPence();
+        Assert.assertTrue(coin.getValue() == 0.02);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.TwoPence);
+        Assert.assertEquals(coin.getSmeltingSpec(), cuPlatedSteel.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testPence() {
+	    coin = new Pence();
+        Assert.assertTrue(coin.getValue() == 0.01);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.GBP);
+        Assert.assertEquals(coin.getName(), CoinNames.Pence);
+        Assert.assertEquals(coin.getSmeltingSpec(), cuPlatedSteel.getSmeltingSpecs());
     }
 }
