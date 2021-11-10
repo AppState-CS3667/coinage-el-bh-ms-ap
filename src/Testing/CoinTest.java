@@ -139,4 +139,79 @@ public class CoinTest {
         Assert.assertEquals(coin.getName(), CoinNames.CadNickel);
         Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
     }
+	
+	/*
+		EUR Coins
+	*/
+	@Test
+	public void testTwoEuro() {
+	    coin = new TwoEuro();
+        Assert.assertTrue(coin.getValue() == 2.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.TwoEuro);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testOneEuro() {
+	    coin = new OneEuro();
+        Assert.assertTrue(coin.getValue() == 1.00);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.OneEuro);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testFiftyEuroCent() {
+	    coin = new FiftyEuroCent();
+        Assert.assertTrue(coin.getValue() == 0.50);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.FiftyEuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTwentyEuroCent() {
+	    coin = new TwentyEuroCent();
+        Assert.assertTrue(coin.getValue() == 0.25);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.TwentyEuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTenEuroCent() {
+	    coin = new TenEuroCent();
+        Assert.assertTrue(coin.getValue() == 0.10);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.TenEuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testFiveEuroCent() {
+	    coin = new FiveEuroCent();
+        Assert.assertTrue(coin.getValue() == 0.05);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.FiveEuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testTwoEuroCent() {
+	    coin = new TwoEuroCent();
+        Assert.assertTrue(coin.getValue() == 0.02);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.TwoEuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
+	
+	@Test
+	public void testEuroCent() {
+	    coin = new EuroCent();
+        Assert.assertTrue(coin.getValue() == 0.01);
+        Assert.assertEquals(coin.getCountryCode(), CountryCodes.EUR);
+        Assert.assertEquals(coin.getName(), CoinNames.EuroCent);
+        Assert.assertEquals(coin.getSmeltingSpec(), unknownSpecs.getSmeltingSpecs());
+    }
 }
