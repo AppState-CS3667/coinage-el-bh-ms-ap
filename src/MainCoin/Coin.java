@@ -10,7 +10,7 @@ public abstract class Coin {
     private CountryCodes countryCode;
     private double value;
     private CoinNames name;
-    private String smeltingSpec;
+    private String smeltingSpec; //todo
 
     /**
      * Constructor for Coin
@@ -58,6 +58,7 @@ public abstract class Coin {
 
     /**
      * Calls smelt on the smelt object
+     * @todo
      */
     public void smelt() {
         //todo
@@ -65,9 +66,26 @@ public abstract class Coin {
 
     /**
      * Polish Method
+     * @todo
      */
     public void polish() {
+        //todo
+    }
 
+    /**
+     * Imprint method
+     * @todo
+     */
+    public void imprint() {
+        //todo
+    }
+    
+    /**
+     * Inspect method
+     * @todo
+     */
+    public void inspect() {
+        //todo
     }
 
 }
