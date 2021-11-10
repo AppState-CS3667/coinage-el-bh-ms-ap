@@ -16,7 +16,9 @@ clean:
 compile: junit-platform-console-standalone-1.2.0.jar 
 	javac $(JFLAGS) -cp .:junit-platform-console-standalone-1.2.0.jar src/MainCoin/*.java
 	javac $(JFLAGS) -cp .:junit-platform-console-standalone-1.2.0.jar src/CoinClasses/*.java
-demo: bin/Demo.class
+	javac $(JFLAGS) -cp .:junit-platform-console-standalone-1.2.0.jar src/*.java
+
+demo: 
 	java -cp bin Demo
 
 test: junit-platform-console-standalone-1.2.0.jar 
