@@ -1,3 +1,4 @@
+package MainCoin;
 /**
  * All Country Codes we can make coins with
  *  Using an enum for compile time error catching

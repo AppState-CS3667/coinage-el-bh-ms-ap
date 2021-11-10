@@ -1,3 +1,4 @@
+package MainCoin;
 
 /**
  * Mint implementation for CAD.

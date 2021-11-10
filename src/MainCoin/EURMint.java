@@ -1,16 +1,17 @@
+package MainCoin;
 
 /**
- * Mint implementation for GBP.
+ * Mint implementation for EUR.
  * @author Bryan Hill
  *
  */
-public class GBPMint extends Mint {
+public class EURMint extends Mint {
     
-    private static GBPMint mintInstance;
+    private static EURMint mintInstance;
 
     /**
      * Method to make and return the desired coin.
-     * @param countryCode: The country of origin for Coin (GBP).
+     * @param countryCode: The country of origin for Coin (EUR).
      * @param denomination: The numeric value of the Coin.
      * @return
      */
@@ -19,9 +20,9 @@ public class GBPMint extends Mint {
         return null;
     }
     
-    public static GBPMint getInstance() {
+    public static EURMint getInstance() {
         if (mintInstance == null) {
-            mintInstance = new GBPMint();
+            mintInstance = new EURMint();
         }
         return mintInstance;
     }
