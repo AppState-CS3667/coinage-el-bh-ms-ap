@@ -1,4 +1,6 @@
-public class Unknown implements SmeltingBehavior
+package Smelting;
+
+public class UnknownSpecs implements SmeltingBehavior
 {
     public String getSmeltingSpecs()
     {
