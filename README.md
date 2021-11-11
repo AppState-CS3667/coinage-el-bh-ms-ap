@@ -1,13 +1,5 @@
 # coins-starter
 
-##  Test Subteam:
-
-
-
--------
-
-## Dev Subteam
-
-
-
--------
+Team Members:
+    Subteam A: Ethan Little, Bryan Hill
+    Subteam B: Max Smoot, Alivia Paredes
