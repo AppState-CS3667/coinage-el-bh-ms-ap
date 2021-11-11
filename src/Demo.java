@@ -14,24 +14,28 @@ public class Demo {
      * 
      * @param args
      */
-    public static void main(String[] args) {
-
-	String factoryString = "USD";
-
+    public static void main(String[] args) 
+    {
+        
+        String factoryString = "USD";
         if (args.length != 1) {
             printError();
         } else {
             factoryString = args[0];
         }
-
         CountryCodes factory = stringToCountryCode(factoryString);
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter coin denomination (0.25 = a quarter, 0 to quit)");
+        
+        String enterCoinMessage = "Enter coin denomination (0.25 = a quarter, 0 to quit)";
+        System.out.println(enterCoinMessage);
         double denomination = keyboard.nextDouble();
-        Coin coin = createCoin(factory, denomination);
-
-        System.out.println(coin);
-
+        while(denomination != 0)
+        {
+            Coin coin = createCoin(factory, denomination);
+            System.out.println(coin);
+            System.out.println(enterCoinMessage);
+            denomination = keyboard.nextDouble();
+        }
     }
 
     public static void printError() {
