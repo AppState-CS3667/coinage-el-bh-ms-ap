@@ -75,6 +75,10 @@ public abstract class Coin {
         public NullCoin(CountryCodes countryCode, CoinNames name, double value, SmeltingBehavior smeltingSpec) {
             super(countryCode, name, value, smeltingSpec);
         }
+        @Override
+        public String toString() {
+            return "";
+        }
 
         @Override
         public double getValue() {

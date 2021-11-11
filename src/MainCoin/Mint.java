@@ -1,29 +1,51 @@
 package MainCoin;
+
+import java.util.Random;
+
 /**
  * Mint abstraction for factory pattern implementation.
+ * 
  * @author Bryan Hill
  *
  */
 public abstract class Mint {
-    
+
     /**
      * Abstract method to make and return the desired coin.
-     * @param countryCode: The country of origin for Coin.
+     * 
+     * @param countryCode:  The country of origin for Coin.
      * @param denomination: The numeric value of the Coin.
      * @return Coin: The coin to be created.
      */
     private Coin coin;
+    private static Random rand = new Random();
 
     protected abstract Coin mintCoin(double denomination);
 
+    /**
+     * returns False 1/odds of the time
+     * @param odds
+     * @return
+     */
+    protected boolean failure(int odds) {
+        return Math.floor(rand.nextDouble() * odds) == 1;
+
+    }
+
     public Coin makeCoin(double denomination) {
         coin = mintCoin(denomination);
+        if (coin == Coin.NULL) {
+            System.out.println("Failed to manufature coin");
+            return coin;
+        }
         smelt();
-        inspect();
-        smooth();
-        polish();
+        if (!inspect() || !smooth() || !polish()) {
+            System.out.println("Failed to manufature coin");
+            return Coin.NULL;
+        }
         return coin;
     }
+
     /**
      * Calls smelt on the smelt object
      * 
@@ -40,9 +62,15 @@ public abstract class Mint {
      * 
      * @todo
      */
-    public void polish() {
+    public boolean polish() {
         // todo
-        System.out.println("Polishing " + coin.getName() + "... completed");
+        System.out.print("Polishing " + coin.getName());
+        if (failure(1000)) {
+            System.out.println(" ...failed.");
+            return false;
+        }
+        System.out.println(" ...completed");
+        return true;
     }
 
     /**
@@ -60,13 +88,26 @@ public abstract class Mint {
      * 
      * @todo
      */
-    public void inspect() {
+    public boolean inspect() {
         // todo
-        System.out.println("Inspecting " + coin.getName() + " ...completed.");
+        System.out.print("Inspecting " + coin.getName());
+        if (failure(12)) {
+            System.out.println(" ...failed.");
+            return false;
+        }
+        System.out.println(" ...completed");
+        return true;
     }
 
-    public void smooth() {
-        System.out.println("Smoothing " + coin.getName() + " ...completed.");
+    public boolean smooth() {
+        System.out.print("Smoothing " + coin.getName());
+        if (failure(1000)) {
+            System.out.println(" ...failed.");
+            return false;
+        }
+        System.out.println(" ...completed");
+        return true;
+
     }
-    
+
 }
