@@ -1,5 +1,7 @@
 package MainCoin;
 
+import CoinClasses.*;
+
 /**
  * Mint implementation for CAD.
  * @author Bryan Hill
@@ -16,8 +18,15 @@ public class CADMint extends Mint {
      * @return
      */
     public Coin makeCoin(CountryCodes countryCode, double denomination) {
-        // TODO Auto-generated method stub
-        return null;
+
+        if (denomination == 2.00) return new Toonie();
+        if (denomination == 1.00) return new Loonie();
+	if (denomination == 0.50) return new FiftyCent();
+	if (denomination == 0.25) return new QuarterCAD();
+	if (denomination == 0.10) return new DimeCAD();
+	if (denomination == 0.05) return new NickelCAD();
+
+	return Coin.NULL;
     }
     
     public static CADMint getInstance() {
