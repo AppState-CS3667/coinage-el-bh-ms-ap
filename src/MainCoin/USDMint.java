@@ -26,8 +26,7 @@ public class USDMint extends Mint {
 	if (denomination == 0.05) return new NickelUSD();
 	if (denomination == 0.01) return new Penny();
 
-	//TODO: Change to NullCoin.
-	return null;
+	return Coin.NULL;
     }    
 	
     

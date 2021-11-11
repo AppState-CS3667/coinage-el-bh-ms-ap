@@ -28,8 +28,7 @@ public class EURMint extends Mint {
 	if (denomination == 0.02) return new TwoEuroCent();
 	if (denomination == 0.01) return new EuroCent();
 
-	//TODO: Change to NullCoin.
-	return null;
+	return Coin.NULL;
     }
     
     public static EURMint getInstance() {

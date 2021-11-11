@@ -29,9 +29,7 @@ public class GBPMint extends Mint {
 	if (denomination == 0.02) return new TwoPence();
 	if (denomination == 0.01) return new Pence();
 
-	//TODO: Change to NullCoin.
-	return null;
-
+	return Coin.NULL;
 
     }
     

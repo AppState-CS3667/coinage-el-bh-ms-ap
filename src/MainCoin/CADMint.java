@@ -26,8 +26,7 @@ public class CADMint extends Mint {
 	if (denomination == 0.10) return new DimeCAD();
 	if (denomination == 0.05) return new NickelCAD();
 
-	//TODO: Change to NullCoin.
-	return null;
+	return Coin.NULL;
     }
     
     public static CADMint getInstance() {
