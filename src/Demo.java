@@ -16,7 +16,6 @@ public class Demo {
      */
     public static void main(String[] args) {
 
-        Scanner keyboard = new Scanner(System.in);
 	String factoryString = "USD";
 
         if (args.length != 1) {
@@ -25,10 +24,10 @@ public class Demo {
             factoryString = args[0];
         }
 
-        System.out.println("Enter coin denomination (0.25 = a quarter, 0 to quit)");
-
-        double denomination = keyboard.nextDouble();
         CountryCodes factory = stringToCountryCode(factoryString);
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter coin denomination (0.25 = a quarter, 0 to quit)");
+        double denomination = keyboard.nextDouble();
         Coin coin = createCoin(factory, denomination);
 
         System.out.println(coin);
