@@ -20,6 +20,11 @@ public abstract class Mint {
     private Coin coin;
     private static Random rand = new Random();
 
+    /**
+     * Each Mint implements this to return correct coin type depending on the Country
+     * @param denomination
+     * @return
+     */
     protected abstract Coin mintCoin(double denomination);
 
     /**
@@ -32,10 +37,18 @@ public abstract class Mint {
 
     }
 
+    /**
+     * Public makeCoin method.
+     * Uses template design pattern to do smelt() inspect() smooth() polish()
+     * utilizes each Mints mintCoin() method to actually get the con object
+     * 
+     * @param denomination
+     * @return coin on success or Coin.NULL on failure
+     */
     public Coin makeCoin(double denomination) {
         coin = mintCoin(denomination);
         if (coin == Coin.NULL) {
-            System.out.println("Failed to manufature coin");
+            System.out.println("Failed to manufature coin. Invalid denomination.");
             return coin;
         }
         smelt();
