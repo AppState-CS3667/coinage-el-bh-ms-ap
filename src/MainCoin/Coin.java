@@ -2,8 +2,9 @@ package MainCoin;
 
 import Smelting.SmeltingBehavior;
 /**
- * Coin.java Abstract Super Class for Coins
- * Uses Enums for name and countryCode for compile time error catching.
+ * Coin.java Abstract Super Class for Coins Uses Enums for name and countryCode
+ * for compile time error catching.
+ * 
  * @author Max Smoot
  * 
  */
@@ -13,9 +14,11 @@ public abstract class Coin {
     private double value;
     private CoinNames name;
     private SmeltingBehavior smeltingSpec;
+    public static Coin NULL = new NullCoin(null, null, 0, null); //pass null or 0 since it is a NullCoin
 
     /**
      * Constructor for Coin
+     * 
      * @param countryCode
      * @param value
      */
@@ -28,6 +31,7 @@ public abstract class Coin {
 
     /**
      * Getter for the coin's value.
+     * 
      * @return value
      */
     public double getValue() {
@@ -36,6 +40,7 @@ public abstract class Coin {
 
     /**
      * Getter for the country code.
+     * 
      * @return countryCode
      */
     public CountryCodes getCountryCode() {
@@ -44,7 +49,8 @@ public abstract class Coin {
 
     /**
      * Geter for name
-     * @return name 
+     * 
+     * @return name
      */
     public CoinNames getName() {
         return name;
@@ -52,6 +58,7 @@ public abstract class Coin {
 
     /**
      * Getter for smeltingSpec
+     * 
      * @return smeltingSpec
      */
     public String getSmeltingSpec() {
@@ -60,34 +67,80 @@ public abstract class Coin {
 
     /**
      * Calls smelt on the smelt object
+     * 
      * @todo
      */
     public void smelt() {
-        //todo
+        // todo
     }
 
     /**
      * Polish Method
+     * 
      * @todo
      */
     public void polish() {
-        //todo
+        // todo
     }
 
     /**
      * Imprint method
+     * 
      * @todo
      */
     public void imprint() {
-        //todo
+        // todo
     }
-    
+
     /**
      * Inspect method
+     * 
      * @todo
      */
     public void inspect() {
-        //todo
+        // todo
     }
 
+    private static class NullCoin extends Coin {
+
+        public NullCoin(CountryCodes countryCode, CoinNames name, double value, SmeltingBehavior smeltingSpec) {
+            super(countryCode, name, value, smeltingSpec);
+        }
+
+        @Override
+        public double getValue() {
+            return 0;
+        }
+
+        @Override
+        public CountryCodes getCountryCode() {
+            return null;
+        }
+
+        @Override
+        public CoinNames getName() {
+            return null;
+        }
+
+        @Override
+        public String getSmeltingSpec() {
+            return null;
+        }
+
+        @Override
+        public void smelt() {
+        }
+
+        @Override
+        public void polish() {
+        }
+
+        @Override
+        public void imprint() {
+        }
+
+        @Override
+        public void inspect() {
+        }
+    }
 }
