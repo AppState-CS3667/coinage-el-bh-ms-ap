@@ -17,7 +17,7 @@ public class USDMint extends Mint {
      * @param denomination: The numeric value of the Coin.
      * @return
      */
-    public Coin makeCoin(CountryCodes countryCode, double denomination) {
+    public Coin mintCoin(double denomination) {
         
         if (denomination == 1.00) return new Dollar();
 	if (denomination == 0.50) return new HalfDollar();

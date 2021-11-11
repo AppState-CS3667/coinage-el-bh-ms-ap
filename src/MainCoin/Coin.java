@@ -65,46 +65,19 @@ public abstract class Coin {
         return smeltingSpec.getSmeltingSpecs();
     }
 
-    /**
-     * Calls smelt on the smelt object
-     * 
-     * @todo
-     */
-    public void smelt() {
-        // todo
+    public String toString() {
+        return "(" + getName().toString() + ") " + getValue();
     }
-
-    /**
-     * Polish Method
-     * 
-     * @todo
-     */
-    public void polish() {
-        // todo
-    }
-
-    /**
-     * Imprint method
-     * 
-     * @todo
-     */
-    public void imprint() {
-        // todo
-    }
-
-    /**
-     * Inspect method
-     * 
-     * @todo
-     */
-    public void inspect() {
-        // todo
-    }
+    
 
     private static class NullCoin extends Coin {
 
         public NullCoin(CountryCodes countryCode, CoinNames name, double value, SmeltingBehavior smeltingSpec) {
             super(countryCode, name, value, smeltingSpec);
+        }
+        @Override
+        public String toString() {
+            return "";
         }
 
         @Override
@@ -127,20 +100,5 @@ public abstract class Coin {
             return null;
         }
 
-        @Override
-        public void smelt() {
-        }
-
-        @Override
-        public void polish() {
-        }
-
-        @Override
-        public void imprint() {
-        }
-
-        @Override
-        public void inspect() {
-        }
     }
 }

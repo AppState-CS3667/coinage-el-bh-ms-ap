@@ -1,0 +1,54 @@
+Script started on Wed 10 Nov 2021 04:49:36 PM EST
+enabled ~/.bashrc
+[?1034hbash-4.2$ ./CoinClient
+
+Problem with command line coin factory argument.
+Possible coin factories include: USD, GBP, CAD, EUR
+Using USD: U.S. Coin Factory
+
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.25
+Smelting QuarterCoin...completed.
+Inspecting QuarterCoin...completed.
+Smoothing QuarterCoin...completed.
+Polishing QuarterCoin...completed.
+(QuarterCoin)$0.25
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.25
+Smelting QuarterCoin...completed.
+Inspecting QuarterCoin...completed.
+Smoothing QuarterCoin...completed.
+Polishing QuarterCoin...failed.
+Failed to manufacture coin.
+
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.10
+Smelting DimeCoin...completed.
+Inspecting DimeCoin...completed.
+Smoothing DimeCoin...completed.
+Polishing DimeCoin...completed.
+(DimeCoin)$0.10
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.33
+
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0
+
+bash-4.2$ ./CoinClient GBP
+Using GBP: Great Britain Coin Factory
+
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.2
+Smelting TwentyPenceCoin...completed.
+Inspecting TwentyPenceCoin...completed.
+Smoothing TwentyPenceCoin...completed.
+Polishing TwentyPenceCoin...completed.
+(TwentyPenceCoin)£0.20
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0.25
+
+Enter coin denomination (0.25 = a quarter, 0 to quit): 1.00
+Smelting PoundCoin...completed.
+Inspecting PoundCoin...completed.
+Smoothing PoundCoin...completed.
+Polishing PoundCoin...completed.
+(PoundCoin)£1.00
+Enter coin denomination (0.25 = a quarter, 0 to quit): 0
+
+bash-4.2$ exit
+exit
+
+Script done on Wed 10 Nov 2021 04:50:22 PM EST
