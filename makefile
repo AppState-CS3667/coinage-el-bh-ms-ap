@@ -9,7 +9,7 @@ default:
 	@echo "'make demo' runs coin demo"
 
 clean:
-	rm -f bin/*.class
+	rm -f bin/*/*.class
 	rm -f src/*~
 	rm -f *~
 
