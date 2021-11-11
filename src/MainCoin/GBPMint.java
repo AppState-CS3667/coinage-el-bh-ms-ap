@@ -17,7 +17,7 @@ public class GBPMint extends Mint {
      * @param denomination: The numeric value of the Coin.
      * @return
      */
-    public Coin makeCoin(CountryCodes countryCode, double denomination) {
+    public Coin mintCoin(double denomination) {
     
 	if (denomination == 5.00) return new FivePound();
 	if (denomination == 2.00) return new TwoPound();

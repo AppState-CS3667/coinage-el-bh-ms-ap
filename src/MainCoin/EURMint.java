@@ -17,7 +17,7 @@ public class EURMint extends Mint {
      * @param denomination: The numeric value of the Coin.
      * @return
      */
-    public Coin makeCoin(CountryCodes countryCode, double denomination) {
+    public Coin mintCoin(double denomination) {
 
 	if (denomination == 2.00) return new TwoEuro();
         if (denomination == 1.00) return new OneEuro();
