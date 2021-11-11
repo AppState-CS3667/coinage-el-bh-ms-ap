@@ -1,4 +1,5 @@
 package MainCoin;
+//import MainCoin.*;
 /**
  * Coin.java Abstract Super Class for Coins
  * Uses Enums for name and countryCode for compile time error catching.
@@ -11,6 +12,7 @@ public abstract class Coin {
     private double value;
     private CoinNames name;
     private String smeltingSpec; //todo
+    private static Coin NULL = new NullCoin(countryCode, name, value, smeltingSpec);
 
     /**
      * Constructor for Coin
@@ -88,4 +90,35 @@ public abstract class Coin {
         //todo
     }
 
+    private static class NullCoin extends Coin {
+        
+        public NullCoin(CountryCodes countryCode, CoinNames name, double value, String smeltingSpec) {
+            super(countryCode, name, value, smeltingSpec);
+        }
+          
+        @Override
+            public double getValue() {}
+
+        @Override
+            public CountryCodes getCountryCode() {}
+
+        @Override
+            public CoinNames getName() {}
+
+        @Override
+            public String getSmeltingSpec() {}
+
+        @Override
+            public void smelt() {}
+
+        @Override
+            public void polish() {}
+
+        @Override
+            public void imprint() {}
+
+        @Override
+            public void inspect() {} 
+    }
 }
+
